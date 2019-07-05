@@ -1,0 +1,85 @@
+<div class="formContainer">
+   <form #branchForm="ngForm" (ngSubmit)="InsertBranch()" name="brForm" >
+    <h1 [hidden]="isUpdate">הוספת כולל: </h1> 
+    <h2>פרטי הכולל:</h2>
+     <label for="name" >שם הכולל:  </label>    
+      <mat-form-field> 
+        <input matInput type="text" name="name" [(ngModel)]="branch.Name" />
+      </mat-form-field>
+    <br/>
+    
+    <label for="openingDate">תאריך פתיחת הכולל:  </label>
+    <mat-form-field> 
+     <input matInput type="date" name="openingDate" [(ngModel)]="branch.OpeningDate"/>
+    </mat-form-field>
+    <br/>
+  
+    <label for="studySubject"> נושא נלמד:  </label>
+    <mat-form-field>
+      <input matInput type="text" name="studySubject" [(ngModel)]="branch.StudySubjects"/>
+    </mat-form-field>
+    <br/>
+
+    <!--<label for="img">  תמונה:  </label>
+    <mat-form-field>
+      <input matInput type="image" name="img" [(ngModel)]="branch.Image"/>
+    </mat-form-field>
+    <br/> -->
+
+
+  <!--<span style="color:red;" *ngIf="message">{{message}}</span>-->
+  <!-- <input  [(ngModel)]="branch.Image" type="text" name="branch.Image" type="file" accept='image/*' (change)="preview(file.files)" />
+  <img mat-card-image [src]="imgURL" height="200" *ngIf="imgURL"> -->
+  <input  type="file" name="imgURL" [(ngModel)]="branch.Image"  />
+  <img  [src]="imgURL" height="200" *ngIf="imgURL">
+
+
+     
+    <h2>כתובת הכולל:</h2>
+    
+    <label for="country">ארץ: </label>
+    <mat-form-field> 
+      <input type="text" matInput name="country" [(ngModel)]="country.Name" />
+    </mat-form-field>
+    <br/>
+     
+    <label for="city">עיר:  </label>
+    <mat-form-field> 
+      <input type="text" matInput name="city" [(ngModel)]="city.Name"/>
+    </mat-form-field>
+    <br/>
+    
+    <label for="street">רחוב:  </label>
+    <mat-form-field> 
+      <input type="text" matInput name="street" [(ngModel)]="address.Street.Name"/>
+    </mat-form-field> 
+    <br/>
+    
+    <label for="street">שכונה:  </label>
+    <mat-form-field> 
+      <input type="text" matInput name="neighborhood" [(ngModel)]="address.NeighborhoodName" />
+    </mat-form-field> 
+    <br/>
+    
+    <!-- <label for="houseNumber">בית:  </label>
+    <mat-form-field>
+      <input type="number" matInput name="houseNumber" [(ngModel)]="address.HouseNumber" />
+    </mat-form-field>   
+    <br/>
+    
+    <label for="appartment">דירה:  </label>
+    <mat-form-field>
+      <input type="number" matInput name="appartment" [(ngModel)]="address.ApartmentNumber"/>
+    </mat-form-field>
+    <br/> -->
+    
+    <label for="ZipCode">מיקוד:  </label>
+    <mat-form-field>
+      <input type="text" matInput name="ZipCode" [(ngModel)]="address.ZipCode" />
+    </mat-form-field>
+    <br/> 
+   
+    <input type="submit" value="add" [disabled]="!branchForm.form.valid" />
+    
+    </form>    
+   </div>    

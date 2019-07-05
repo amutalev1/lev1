@@ -1,0 +1,24 @@
+$font-color: white;
+$a-color: deepskyblue;
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+:host/deep/.mat-toolbar {
+  background: black;
+}
+
+button:focus {
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+}
+.icons {
+  align-self: flex-end;
+  .mat-icon-button {
+    width: 2vw;
+  }
+  .material-icons {
+    font-size: 3.5vh;
+  }
+}
+ 

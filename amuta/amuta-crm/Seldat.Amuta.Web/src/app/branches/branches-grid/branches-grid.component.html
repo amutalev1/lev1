@@ -1,0 +1,3 @@
+<i class="material-icons" id="lookFor">search</i>
+<input (change)="Contain()" matInput id="search" name="Contain" type="text" [(ngModel)]="str" placeholder="חיפוש" /> 
+<app-ag-grid [data]="branches" [columnDefs]="this.columnDefs" (valueChange)="selected($event)"></app-ag-grid>  

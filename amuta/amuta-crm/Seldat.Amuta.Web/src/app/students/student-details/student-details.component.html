@@ -1,0 +1,19 @@
+<div [hidden]="!this.show" >
+  
+  <label for="firstname">שם פרטי: </label>
+  <mat-form-field>
+    <input matInput type="text" name="firstname" [(ngModel)]="student.FirstName" disabled />
+  </mat-form-field>
+
+  <label for="lastname">שם משפחה: </label>
+  <mat-form-field>
+    <input matInput type="text" name="lastname" [(ngModel)]="student.LastName" disabled />
+  </mat-form-field>
+
+  <label for="street">רחוב: </label>
+  <mat-form-field>
+    <input type="text" matInput name="street" [(ngModel)]="student.Address.Street.Name" required minlength="2"
+      maxlength="50" />
+  </mat-form-field>
+
+</div>

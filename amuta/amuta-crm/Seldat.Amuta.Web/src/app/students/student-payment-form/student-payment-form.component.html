@@ -1,0 +1,90 @@
+<div class="formContainer">
+  <form #studentPaymentForm="ngForm" (ngSubmit)="AddStudentPayment()" name="studentPaymentForm" >
+<h1>נתונים לחישוב מלגה</h1>
+
+
+  <label for="studentId" >קוד תלמיד:  </label>    
+    <mat-form-field> 
+      <input matInput NumbersOnly type="text" name="studentId" [(ngModel)]="studentPayment.studentId" required />
+    </mat-form-field>
+  <br/>
+  
+  <!-- <label for="month">חודש:  </label>
+  <mat-form-field> 
+   <input matInput NumbersOnly type="number" name="month" [(ngModel)]="studentPayment.Month" required min="1" max="12"/>
+  </mat-form-field>
+  <br/>
+  
+  <label for="year">שנה:  </label>
+  <mat-form-field>
+    <input matInput NumbersOnly type="text" name="year" [(ngModel)]="studentPayment.Year" required />
+  </mat-form-field>
+  <br/> -->
+  
+  <label for="date">תאריך:  </label>
+  <mat-form-field>  
+  <input matInput type="date" name="date" [(ngModel)]="date" required/>
+  </mat-form-field>
+  <br/>
+
+  <label for="scolarshipSum">סכום מלגה:  </label>
+  <mat-form-field>  
+    <input matInput NumbersOnly type="text" name="paymentSum" [(ngModel)]="studentPayment.PaymentSum"  />
+  </mat-form-field>
+  <br/>
+  
+  <label for="attendanceSum">סיכום שמירת סדרים:  </label>
+  <mat-form-field>  
+    <input matInput NumbersOnly type="text" name="attendanceSum" [(ngModel)]="studentPayment.AttendanceSum" />
+  </mat-form-field>
+  <br/>
+  
+  <label for="examsSum">סיכום מבחנים:  </label>
+  <mat-form-field>  
+    <input matInput NumbersOnly type="text" name="examsSum" [(ngModel)]="studentPayment.ExamsSum" />
+  </mat-form-field>
+  <br/>
+  
+  
+  <label for="stateBudgetSum">תקציב מדינה:  </label>
+  <mat-form-field>  
+    <input matInput NumbersOnly type="text" name="stateBudgetSum" [(ngModel)]="studentPayment.StateBudgetSum" />
+  </mat-form-field>
+  <br/>
+  
+  <label for="healthSupportSum"> תמיכה בריאותית:  </label>
+  <mat-form-field> 
+    <input NumbersOnly type="text" matInput name="healthSupportSum" [(ngModel)]="studentPayment.HealthSupportSum"  />
+  </mat-form-field>
+  <br/>
+  
+  <label for="dentalHealthSupportSum">טיפולי שיניים:  </label>
+  <mat-form-field> 
+    <input type="text" NumbersOnly matInput name="dentalHealthSupportSum" [(ngModel)]="studentPayment.DentalHealthSupportSum" />
+  </mat-form-field>
+  <br/>
+  
+  <label for="financialSupportSum">תמיכה כלכלית:  </label>
+  <mat-form-field> 
+    <input type="text" NumbersOnly matInput name="financialSupportSum" [(ngModel)]="studentPayment.FinancialSupportSum" />
+  </mat-form-field>
+  <br/>
+    
+  <label for="loansGivenSum">הלוואות שנתנו: </label>
+  <mat-form-field> 
+    <input type="text" NumbersOnly matInput name="loansGivenSum" [(ngModel)]="studentPayment.LoansGivenSum"/>
+  </mat-form-field>
+  <br/>
+  
+  
+  <label for="loansReturnSum">החזרי הלוואות:  </label>
+  <mat-form-field> 
+    <input type="text" NumbersOnly matInput name="loansReturnSum" [(ngModel)]="studentPayment.loansReturnSum"/>
+  </mat-form-field>
+  <br/>
+    
+     <input type="submit" value="add" [disabled]="!studentPaymentForm.form.valid" />
+  </form>
+  </div>
+  
+

@@ -1,0 +1,29 @@
+$font-color:white;
+:host ::ng-deep.mat-toolbar {
+    color:$font-color;
+    font-size: x-large !important ;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height:8vh;
+   button {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        color: white;
+    }
+    .menu_button{
+        padding: 2vw;
+        .menu {
+            font-size: 4.5vh;
+            // padding: 1vh;
+        }
+    }
+    .mat-toolbar-row{
+      height: 70px;
+    }
+  }

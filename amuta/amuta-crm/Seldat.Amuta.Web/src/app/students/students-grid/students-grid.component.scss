@@ -1,0 +1,22 @@
+#search{
+    position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        display: inline;
+        //float: right;
+}
+.mat-input-element
+{
+    border-width:0px;
+    border:none;
+    //border-color: white;
+}
+*:focus {
+    outline: none;
+}
+#lookFor{
+    size: 10px;
+}
+

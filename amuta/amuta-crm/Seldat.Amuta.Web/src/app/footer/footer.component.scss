@@ -1,0 +1,43 @@
+
+
+:host/deep/ .mat-toolbar {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  position: fixed;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 7vh;
+    background-color: white;
+}
+#links {
+  display: flex;
+  .link {
+    padding-left: 1px;
+  }
+  a {
+    color: #0091ea;
+    text-decoration: none;
+    padding: 1vh;
+    font-size: medium;
+  }
+  .is-active {
+    color: black;
+  }
+  li {
+    
+    display: inline-block;
+    a:hover {
+      color: orange;
+    }
+  }
+}
+
+li:not(:last-child):after {
+  content: " |";
+  color: #0091ea;
+  font-size: larger;
+}
+.li.active {
+  background-color: #ccc;
+}

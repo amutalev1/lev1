@@ -1,0 +1,201 @@
+<div class="formContainer">
+<form #studentForm="ngForm" (ngSubmit)="AddStudent()" name="stForm" >
+<h1>פרטים אישים</h1> 
+<label for="fname" >שם פרטי:  </label>    
+  <mat-form-field> 
+    <input matInput type="text" name="fname" [(ngModel)]="stud.FirstName" required minlength="2" maxlength="50"/>
+  </mat-form-field>
+<br/>
+
+<label for="lname">שם משפחה:  </label>
+<mat-form-field> 
+ <input matInput type="text" name="lname" [(ngModel)]="stud.LastName" required minlength="2" maxlength="50"/>
+</mat-form-field>
+<br/>
+
+<label for="supouse">בת זוג:  </label>
+<mat-form-field>
+  <input matInput type="text" name="supouse" [(ngModel)]="stud.WifeName" required minlength="2" maxlength="50"/>
+</mat-form-field>
+<br/>
+
+<label for="supouse_occupation">משלוח יד בת זוג:  </label>
+<mat-form-field>  
+  <input matInput type="text" name="supouse_occupation" [(ngModel)]="stud.JobWife" required minlength="2" maxlength="50"/>
+</mat-form-field>
+<br/>  
+
+<label for="id">ת.ז:  </label>
+ <mat-form-field>  
+  <input matInput type="text" name="id" [(ngModel)]="stud.IdentityNumber" required minlength="9" maxlength="20" pattern="[0-9]*"/>
+ </mat-form-field>
+<br/>
+
+<label for="id">תמונת תז:  </label>
+<mat-form-field>  
+  <input matInput type="text" name="idCard" [(ngModel)]="stud.IdCard" required/>
+</mat-form-field>
+<br/>
+
+
+<label for="born_date">תאריך לידה:  </label>
+<mat-form-field>  
+  <input matInput type="date" name="born_date" [(ngModel)]="stud.date" required/>
+</mat-form-field>
+<br/>
+
+
+<h1>פרטי תקשורת</h1>
+<label for="phone">טלפון בבית:  </label>
+<mat-form-field> 
+  <input NumbersOnly type="text" matInput name="phone" [(ngModel)]="stud.PhoneNumber" required minlength="9" maxlength="10" pattern="[0-9]*"/>
+</mat-form-field>
+<br/>
+
+<label for="cellphone">טלפון נייד:  </label>
+<mat-form-field> 
+  <input type="text" matInput name="cellphone" [(ngModel)]="stud.CellphoneNumber" minlength="9" maxlength="10" pattern="[0-9]*"/>
+</mat-form-field>
+<br/>
+
+<label for="fax">פקס:  </label>
+<mat-form-field> 
+  <input type="text" matInput name="fax" [(ngModel)]="stud.FaxNumber" minlength="9" maxlength="10" pattern="[0-9]*"/>
+</mat-form-field>
+<br/>
+ 
+<h1>כתובת</h1>
+
+<label for="country">ארץ: </label>
+<mat-form-field> 
+  <input type="text" matInput name="country" [(ngModel)]="stud.Address.Country.Name" required minlength="2" maxlength="50"/>
+</mat-form-field>
+<br/>
+
+<label for="city">עיר:  </label>
+<mat-form-field> 
+  <input type="text" matInput name="city" [(ngModel)]="stud.Address.City.Name" required minlength="2" maxlength="50"/>
+</mat-form-field>
+<br/>
+
+<label for="street">רחוב:  </label>
+<mat-form-field> 
+  <input type="text" matInput name="street" [(ngModel)]="stud.Address.Street.Name" required minlength="2" maxlength="50"/>
+</mat-form-field> 
+<br/>
+
+<label for="street">שכונה:  </label>
+<mat-form-field> 
+  <input type="text" matInput name="neighborhood" [(ngModel)]="stud.Address.NeighborhoodName" minlength="2" maxlength="50"/>
+</mat-form-field> 
+<br/>
+
+<label for="houseNumber">בית:  </label>
+<mat-form-field>
+  <input type="number" matInput name="houseNumber" [(ngModel)]="stud.Address.HouseNumber" required minlength="1" maxlength="1000"/>
+</mat-form-field>   
+<br/>
+
+<label for="appartment">דירה:  </label>
+<mat-form-field>
+  <input type="number" matInput name="appartment" [(ngModel)]="stud.Address.ApartmentNumber" required minlength="1" maxlength="1000"/>
+</mat-form-field>
+<br/>
+
+<label for="ZipCode">מיקוד:  </label>
+<mat-form-field>
+  <input type="text" matInput name="ZipCode" [(ngModel)]="stud.Address.ZipCode" minlength="2" maxlength="25"/>
+</mat-form-field>
+<br/>
+
+
+
+<label for="travel_expenses">עלות נסיעות יומית:  </label>
+<mat-form-field>
+<input type="text" matInput name="travel_expenses" [(ngModel)]="stud.TravelExpenses" minlength="0" maxlength="10000"/>
+</mat-form-field>
+<br/>
+
+<h1>פרטי חשבון</h1>
+
+<label for="bank">בנק:  </label>
+<mat-form-field>
+  <input type="text" matInput name="bank" [(ngModel)]="stud.Bank.Name" required minlength="2" maxlength="50"/>
+</mat-form-field>
+<br/>
+  
+<label for="branch">סניף:  </label>
+<mat-form-field>
+  <input type="text" matInput name="branch" [(ngModel)]="stud.Bank.BranchNumber" required minlength="0" maxlength="1000"/>
+</mat-form-field>
+<br/>
+
+<label for="branch_num">מספר בנק: </label>
+<mat-form-field>
+  <input type="text" matInput name="branch_num" [(ngModel)]="stud.Bank.BankNumber" required minlength="2" maxlength="20"/>
+</mat-form-field>
+<br/>
+
+<label for="account_number">מספר חשבון:  </label>
+<mat-form-field>
+  <input type="text" matInput name="account_number" [(ngModel)]="stud.AccountNumber" required minlength="5" maxlength="25" />
+</mat-form-field>
+<br/> 
+
+<h2>ילדים</h2>
+<label for="ChildrenNumber">מספר ילדים:  </label>
+<mat-form-field>
+  <input type="number" matInput name="ChildrenNumber" (change)="AddChild()" [(ngModel)]="stud.ChildrenNumber" min="0"/>
+</mat-form-field>
+<br/>
+
+<div *ngFor="let item of stud.StudentChildren; index as i" >
+
+ <label > #{{i+1}}</label> 
+
+  <label for="fname{{i+1}}" >שם פרטי:  </label>    
+    <mat-form-field> 
+      <input matInput type="text" name="fname{{i+1}}" [(ngModel)]="stud.StudentChildren[i].FirstName" required minlength="2" maxlength="50"/>
+    </mat-form-field>
+ 
+  
+  <label for="lname{{i+1}}">שם משפחה:  </label>
+  <mat-form-field> 
+   <input matInput type="text" name="lname{{i+1}}" [(ngModel)]="stud.StudentChildren[i].LastName" required minlength="2" maxlength="50"/>
+  </mat-form-field>
+ 
+  
+  <label for="gender{{i+1}}"> מין:  </label>
+  <mat-form-field>
+    <input matInput type="text" name="gender{{i+1}}" [(ngModel)]="stud.StudentChildren[i].Gender" required minlength="2" maxlength="50"/>
+  </mat-form-field>
+  
+  <label for="age{{i+1}}"> גיל: </label>
+  <mat-form-field>  
+    <input matInput type="text" name="age{{i+1}}" [(ngModel)]="stud.StudentChildren[i].Age" required min="0"/>
+  </mat-form-field>
+
+  
+  <label for="status{{i+1}}">סטטוס: </label>
+  <mat-form-field>  
+    <input matInput type="text" name="status{{i+1}}" [(ngModel)]="stud.StudentChildren[i].Status" required minlength="2" maxlength="20"/>
+  </mat-form-field>  
+
+  
+</div>
+<input type="submit" value="add" [disabled]="!studentForm.form.valid" [hidden]="isUpdate"/>
+
+<button type="button" (click)="Continue();" [hidden]="isUpdate" >Continue</button>
+
+<button type="button" (click)="update();" [hidden]="!isUpdate" >update</button>
+
+</form>
+
+</div>
+
+
+
+
+
+
+

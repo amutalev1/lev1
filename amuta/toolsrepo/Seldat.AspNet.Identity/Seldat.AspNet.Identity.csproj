@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC8269E3-1A13-427A-90D6-A41C7BC173BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Seldat.AspNet.Identity</RootNamespace>
+    <AssemblyName>Seldat.AspNet.Identity</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfReqs.cs" />
+    <Compile Include="DbContent.cs" />
+    <Compile Include="Managers\GenerateGuidPassword.cs" />
+    <Compile Include="Managers\IGeneratePassword.cs" />
+    <Compile Include="Managers\ILoginManager.cs" />
+    <Compile Include="Managers\Converters.cs" />
+    <Compile Include="Managers\IClaimManager.cs" />
+    <Compile Include="Managers\IRoleManager.cs" />
+    <Compile Include="Managers\IUserManager.cs" />
+    <Compile Include="Managers\DataManager.cs" />
+    <Compile Include="Managers\IUserPassManager.cs" />
+    <Compile Include="Managers\IUserRoleManager.cs" />
+    <Compile Include="Managers\ManagersFactory.cs" />
+    <Compile Include="Managers\MySql\MySqlClaimManager.cs" />
+    <Compile Include="Managers\MySql\MySqlLoginManager.cs" />
+    <Compile Include="Managers\MySql\MySqlManagersFactory.cs" />
+    <Compile Include="Managers\MySql\MySqlRoleManager.cs" />
+    <Compile Include="Managers\MySql\MySqlUserManager.cs" />
+    <Compile Include="Managers\MySql\MySqlUserPassManager.cs" />
+    <Compile Include="Managers\MySql\MySqlUserRoleManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stores\RoleStore.cs" />
+    <Compile Include="Stores\UserStore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Seldat.AspNet.Identity.Entities\Seldat.AspNet.Identity.Entities.csproj">
+      <Project>{0b51afbe-7488-4c7a-8066-151670b2e390}</Project>
+      <Name>Seldat.AspNet.Identity.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seldat.Connectivity\Seldat.Connectivity.csproj">
+      <Project>{88bdc0f9-be4e-4344-bb57-b9787d8f08cd}</Project>
+      <Name>Seldat.Connectivity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

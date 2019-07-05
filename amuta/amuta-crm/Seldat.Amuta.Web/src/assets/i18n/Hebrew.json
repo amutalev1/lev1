@@ -1,0 +1,188 @@
+{
+    "HEADER": {
+        "MENU": {
+            "COLLELS": "כוללים",
+            "YESHIVOT": "ישיבות",
+            "REPORTS": "דוחות"
+        },
+        "LOGIN_SECTION": {
+            "HELLOW": "שלום אורח",
+            "CONNECT": "התחבר"
+        },
+        "LINKS_TOOLTIP": {
+            "PRINT": "שלח להדפסה",
+            "SEARCH": "חפש",
+            "SHOW_ALL_COLUMNS": "הצג את כל העמודות",
+            "DELETE": "מחק פריט",
+            "EXPORT_TO_EXCEL": "יצא לאקסל",
+            "ADD": "הוסף חדש"
+        }
+    },
+    "FOOTER": {
+        "LINKS": {
+            "HOME": "עמוד הבית",
+            "ABOUT": "אודות",
+            "TERMS_USE": "תנאי שימוש",
+            "HELP": "עזרה"
+        }
+    },
+    "AMUTA": "עמותה",
+    "STUDENTS": {
+        "AG_GRID": {
+            "COLUMN_HEADERS": {
+                "ID_NUMBER": "ת.ז.",
+                "NAME": "שם פרטי",
+                "SURNAME": "שם משפחה",
+                "CITY": "עיר",
+                "ADDRESS": "כתובת",
+                "CONTACT_DETAILS": "פרטי קשר",
+                "STATUS": "סטטוס",
+                "NUMBER_OF_CHILDREN": "מספר ילדים",
+                "CHILDREN": "ילדים",
+                "MARRIED_CHILDREN": "מספר ילדים נשואים",
+                "SPOUSE": "בת זוג",
+                "SPOUSE_OCCUPATION": "משלוח יד בת הזוג",
+                "BIRTH_DATE": "תאריך לידה",
+                "OTHER_SCHOOLS": "מסגרות נוספות",
+                "SUPPORT": "תמיכה",
+                "BANK_ACCOUNT": "פרטי חשבון",
+                "MARTIAL_STATUS": "מצב משפחתי",
+                "MONTHLY_INCOME": "הכנסה חודשית",
+                "ID_CARD": "תמונת ת.ז",
+                "TRAVEL_EXPENSES": "הוצאות נסיעה",
+                "FAX_NUMBER": "מספר פקס",
+                "PICTURE": "תמונה",
+                "DELETE":"מחיקה"
+            },
+            "COLUMN_WORDS_DEFS": {
+                "STREET":"רחוב",
+                "APARTMENT":"דירה",
+                "BANK":"בנק",
+                "BRANCH":"סניף",
+                "ACCOUNT":"חשבון",
+                "ACTIVE":"פעיל",
+                "NOT_ACTIVE":"לא פעיל"
+            }
+        }
+    },
+    "BRANCHES": {
+        "AG_GRID": {
+            "COLUMN_HEADERS": {               
+                "NAME": "שם כולל",
+                "CITY":"עיר",
+                "NEIGHBORHOOD":"שכונה",
+                "ADRESS":"כתובת",
+                "STATUS":"סטטוס",
+                "CHARACTER":"אופי",
+                "BASIC_SUPPORT":"מלגת בסיס",
+                "STUDENTS":"אברכים",
+                "HEAD":"ראש כולל",
+                "OPENING_DATE":"תאריך פתיחת כולל",
+                "STUDENTS_NUMBER":"אברכים",
+                "STUDY_SUBJECTS":"נושאים נלמדים",                
+                "IMAGE":"תמונה",
+                "TYPE":"סוג",
+                "EXAM_RULES":"כללי בחינות",
+                "ATTENDANCE_RULES":"כללי נוכחות",              
+                "CONTACT":"איש קשר",
+                "LATE_HOUR":"איחור נחשב משעה",
+                "START_STUDY_HOURS":"שעת התחלת הלימוד",
+                "END_STUDY_HOURS":"שעת סיום הלימוד",
+                "BRANCH":"סניף"
+
+            },
+            "COLUMN_WORDS_DEFS": {
+                "STREET":"רחוב",
+                "APARTMENT":"דירה",
+                "ACTIVE":"פעיל",
+                "NOT_ACTIVE":"לא פעיל",
+                "DAY":"יום",
+                "EVENING":"ערב",
+                "REQUIRED":"בחינה חובה",
+                "NOT_REQUIRED":"בחינה לא חובה",
+                "MAX_ABSENCES":"מספר חיסורים מקסימלי",
+                "MAX_LATENESS":"מספר איחורים מקסימלי",
+                "EXAMS_PER_PERIOD":"מספר מבחנים בתקופה",
+                "EXAMS_PERIOD":"תקופת המבחנים"
+               
+            }
+        }
+    },
+    "EXAMS":{
+        "AG_GRID": {
+            "COLUMN_HEADERS": {   
+                "SUBMIT_EXAM_SCHROLARSHIP_ADDITION":"ציון עובר להעלאה במלגה",
+                "FAILING_SUBMIT_EXAM_SCHROLARSHIP_REDUCING":"ציון נכשל להפחתה במלגה",
+                "PASSED_EXAM_SCHOLARSHIP_ADDITION":"ציון עובר לתוספת במלגה",
+                "NOT_PASSED_EXAM_SCHOLARSHIP_REDUCING":"ציון לא עובר הפחתה במלגה",
+                "PASS_GRADE":"ציון עובר",
+                "SUBJECT":"נושא",
+                "BRANCH":"סניף"
+            },
+            "COLUMN_WORDS_DEFS": {
+
+            }
+        }
+    },
+    "LOANS": {
+        "AG_GRID": {
+            "COLUMN_HEADERS": {               
+                "STUDENT": "תלמיד",               
+                "BRANCH":"כולל",
+                "CURRENT_STATUS":"סטטוס נוכחי",
+                "AMOUNT_REQUESTED":"כמות מבוקשת",
+                "AMOUNT_REPAYMENT_MONTHLY":"כמות החזר חודשית",
+                "DATE_RETURNING_ENTIRE_AMOUNT":"תאריך החזרת כל הכמות",
+                "REASON_IS_APPROVED":"סיבה שאושר",
+                "IS_DISAPPROVED_CLOSED_REQUEST":"לא אושר סגירת בקשה",
+                "DETAILS":"פרטים",
+                "DATE":"תאריך",
+                "IS_APPROVED":"האם אושר",
+                "DIGITAL_SIGNATURE":"חתימה דיגיטלית",
+                "IS_CANCELED":"האם בוטל",
+                 "NUMBER_APPROVED_MONTHS":"כמות חודשים שאושרה",
+                "APPROVED_AMOUNT":"כמות שאושרה",
+                "IS_ACTIVE":"האם פעיל"
+            },
+            "COLUMN_WORDS_DEFS": {                 
+                "ACTIVE":"פעיל",
+                "NOT_ACTIVE":"לא פעיל"               
+            }
+        }
+    },
+    "FinancialSupports":{
+        "AG_GRID": {
+            "COLUMN_HEADERS": {               
+                "DETAILS":"פרטים"
+            },
+            "COLUMN_WORDS_DEFS": {                 
+                          
+            }
+        }
+    },
+    "PAYMENTS":{
+        "AG_GRID": {
+            "COLUMN_HEADERS": {               
+               "STUDENT":"תלמיד",
+               "YEAR":"שנה",
+               "MONTH":"חודש",
+               "PAYMENT_SUM":"סכום מלגה",
+               "ATTENDANCE_SUM":"סיכום נוכחות",
+               "EXAMS_SUM":"סיכום מבחנים",
+               "STATE_BUDGET_SUM":"תקציב מדינה",
+               "HEALTH_SUPPORT_SUM":"תמיכה בריאותית",
+               "DENTAL_HEALTH_SUPPORT_SUM":"טיפולי שיניים",
+               "FINANCIAL_SUPPORT_SUM":"תמיכה כלכלית",
+               "LOANS_GIVEN_SUM":"הלוואות שנתנו",
+               "LOANS_RETURN_SUM":"החזר הלוואות",
+               "SUMMARY":"סיכום"
+            },
+            "COLUMN_WORDS_DEFS": {                 
+                          
+            }
+        }
+    },
+    "AG_GRID":{
+        "LOADING_MESSAGE":"...טוען"
+    }
+}

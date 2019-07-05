@@ -1,0 +1,109 @@
+<div class="formContainer">
+    <form #loansRequestForm="ngForm" (ngSubmit)="AddLoan()" name="lnForm">
+
+    <h1>פרטי תלמיד:</h1> 
+    <label for="studentID" > קוד תלמיד:</label>    
+     <mat-form-field> 
+       <input matInput type="number" name="studentID" [(ngModel)]="loan.studentId" />
+     </mat-form-field>
+    <br/>
+
+    <label for="branchID" > קוד סניף:</label>    
+     <mat-form-field> 
+       <input matInput type="number" name="branchID" [(ngModel)]="loan.branchId" />
+     </mat-form-field>
+    <br/>
+
+    <h1>פרטי הבקשה</h1> 
+
+    <label for="sum" >סכום מבוקש:</label>    
+      <mat-form-field> 
+        <input matInput type="text" name="sum" [(ngModel)]="loan.AmountRequested"/>
+      </mat-form-field>
+    <br/>
+    
+    <label for="reason">סיבת הבקשה:</label>
+    <mat-form-field> 
+     <input matInput type="text" name="reason"/>
+    </mat-form-field>
+    <br/>
+    
+    <label for="describe">פרוט בקשה:</label>
+    <mat-form-field>
+      <input matInput type="text" name="describe" [(ngModel)]="loan.details"/>
+    </mat-form-field>
+    <br/>
+
+
+    <label for="date"> תאריך:</label>
+    <mat-form-field>
+      <input matInput type="datetime" name="date" [(ngModel)]="loan.date" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="period">תקופת החזר משוערת:</label>
+    <mat-form-field>  
+      <input matInput type="text" name="period" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="monthly_return">החזר חודשי מבוקש:</label>
+    <mat-form-field>
+      <input matInput type="text" name="monthly_return" />
+    </mat-form-field>
+    <br/>
+    
+    <h1>ערב א</h1> 
+    <label for="quarantor1_fname" >שם פרטי ערב א:</label>    
+      <mat-form-field> 
+        <input matInput type="text" name="quarantor1_fname" />
+      </mat-form-field>
+    <br/>
+    
+    <label for="quarantor1_lname">שם משפחה ערב א:</label>
+    <mat-form-field> 
+     <input matInput type="text" name="quarantor1_lname" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="quarantor1_identity">ת.ז ערב א:</label>
+    <mat-form-field>
+      <input matInput type="text" name="quarantor1_identity" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="quarantor1_adress">כתובת ערב א:</label>
+    <mat-form-field>  
+      <input matInput type="text" name="quarantor1_adress" />
+    </mat-form-field>
+    <br/>
+
+    <h1>ערב ב</h1> 
+    <label for="quarantor2_fname">שם פרטי ערב ב:</label>    
+      <mat-form-field> 
+        <input matInput type="text" name="quarantor2_fname" />
+      </mat-form-field>
+    <br/>
+    
+    <label for="quarantor2_lname">שם משפחה ערב ב:</label>
+    <mat-form-field> 
+     <input matInput type="text" name="quarantor2_lname" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="quarantor2_identity">ת.ז ערב ב:</label>
+    <mat-form-field>
+      <input matInput type="text" name="quarantor2_identity" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="quarantor2_adress">כתובת ערב ב:</label>
+    <mat-form-field>  
+      <input matInput type="text" name="quarantor2_adress" />
+    </mat-form-field>
+    <br/>
+
+    <input type="submit" value="add" [disabled]="!loansRequestForm.form.valid" />
+    </form>
+    </div>
+

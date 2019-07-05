@@ -1,0 +1,32 @@
+$font-color:white;
+$a-color:deepskyblue;
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+:host/deep/.mat-toolbar {
+  background: black;
+  color:$font-color;
+  a {
+    color:$a-color;
+  }
+
+}
+:host/deep/ .mat-tab-label {
+  height:8vh;
+  color: $font-color;
+  min-width: 100px;
+}
+
+:host/deep/.mat-tab-body-content {
+  display: none;
+}
+:host/deep/ .mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: $font-color;
+}
+:host/deep/ .mat-ink-bar {
+  height: 3px;
+}
+.login_span {
+  font-size: small;
+}

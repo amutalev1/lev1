@@ -1,0 +1,50 @@
+
+<div class="formContainer">
+  <form #branchStudentForm="ngForm" (ngSubmit)="AddBranchStudent()" name="bsForm">
+    
+  <h1>רישום תלמיד לכולל:</h1> 
+          
+  <label for="studentID" > ת.ז תלמיד:</label>    
+   <mat-form-field> 
+     <input matInput type="text" name="studentID" [(ngModel)]="branchStudent.Student.IdentityNumber" required />
+   </mat-form-field>
+   <app-student-details [identity]="branchStudent.Student.IdentityNumber" [hidden]="!branchStudent.Student.IdentityNumber"></app-student-details>
+  <br/>
+        
+  <label for="branchID" > קוד כולל:</label>    
+   <mat-form-field> 
+     <input matInput type="number" name="branchID" [(ngModel)]="branchStudent.Branch.Id" required />
+   </mat-form-field>
+  <br/>
+      
+  <label for="sum" >תאריך כניסה עברי:</label>    
+    <mat-form-field> 
+      <input matInput type="date" name="sum" [(ngModel)]="branchStudent.EntryHebrewDate" required/>
+    </mat-form-field>
+  <br/>
+
+  <label for="sum" >תאריך כניסה לועזי:</label>    
+    <mat-form-field> 
+      <input matInput type="date" name="sum" [(ngModel)]="branchStudent.EntryGregorianDate" required/>
+    </mat-form-field>
+  <br/>
+
+  <label for="sum" >תאריך יציאה עברי:</label>    
+    <mat-form-field> 
+      <input matInput type="date" name="sum" [(ngModel)]="branchStudent.ReleaseHebrewDate" required/>
+    </mat-form-field>
+  <br/>
+
+  <label for="sum" >תאריך יציאה לועזי:</label>    
+    <mat-form-field> 
+      <input matInput type="date" name="sum" [(ngModel)]="branchStudent.ReleaseHebrewDate" required/>
+    </mat-form-field>
+  <br/>
+
+  <mat-checkbox name="isHead" [(ngModel)]="branchStudent.IsHead">האם ראש כולל?</mat-checkbox>
+  <br/>
+
+  <button mat-raised-button [disabled]="!branchStudentForm.form.valid" >add</button>
+  </form>
+  </div>
+

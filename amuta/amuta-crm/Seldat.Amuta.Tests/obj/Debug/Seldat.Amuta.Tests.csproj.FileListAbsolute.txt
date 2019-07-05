@@ -1,0 +1,2 @@
+E:\10.06.19\amuta\amuta-crm\Seldat.Amuta.Tests\obj\Debug\Seldat.Amuta.Tests.csprojAssemblyReference.cache
+E:\10.06.19\amuta\amuta-crm\Seldat.Amuta.Tests\obj\Debug\Seldat.Amuta.Tests.csproj.CoreCompileInputs.cache

@@ -1,0 +1,40 @@
+<div class="formContainer">
+    <form #financialSupportRequestForm="ngForm">
+    <h1>פרטי הבקשה</h1> 
+    <label for="relation" >קשר למטופל:</label>    
+      <mat-form-field> 
+        <input matInput type="text" name="relation" />
+      </mat-form-field>
+    <br/>
+    
+    <label for="name">שם מטופל:</label>
+    <mat-form-field> 
+     <input matInput type="text" name="name" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="age">גיל מטופל:</label>
+    <mat-form-field>
+      <input matInput type="text" name="age" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="date">תאריך טיפול:</label>
+    <mat-form-field>  
+      <input matInput type="date" name="date" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="urgent">דחיפות:</label>
+    <mat-form-field>
+      <input matInput type="text" name="urgent" />
+    </mat-form-field>
+    <br/>
+    
+    <label for="commands">הערות:</label>
+    <mat-form-field>  
+      <input matInput type="text" name="commands" />
+    </mat-form-field>
+    <br/>
+    </form>
+    </div>

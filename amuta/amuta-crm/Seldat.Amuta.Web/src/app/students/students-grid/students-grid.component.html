@@ -1,0 +1,11 @@
+<i class="material-icons" id="lookFor">search</i>
+<input (change)="Contain()" matInput  name="Contain" type="text" id="search" [(ngModel)]="str" placeholder="חיפוש " /> 
+<app-branch-details *ngIf="branchShow" [branch]="branchToShow"></app-branch-details>
+<app-ag-grid [data]="students" [columnDefs]="this.columnDefs"></app-ag-grid>
+<!-- <button (click)="setStudent1Active($event)">הפוך תלמיד 1 להיות פעיל</button>
+<button (click)="setStudent1Inctive($event)">הפוך תלמיד 1 ללא פעיל</button>
+
+<button (click)="setStudent1ActiveInBranch($event)">הפוך תלמיד 3 לפעיל בכולל 1</button>
+<button (click)="setStudent1InactiveInBranch($event)">הפוך תלמיד 3 ללא פעיל בכולל 1</button>
+<button (click)="InsertPendingStudent($event)">להוספת תלמיד חדש</button> -->
+

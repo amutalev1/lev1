@@ -1,0 +1,165 @@
+{
+    "MENU": {
+        "HOME": "Home",
+        "TICKETS": "Tickets",
+        "LOG_OUT": "Log-Out"
+    },
+    "STUDENTS": {
+        "AG_GRID": {
+            "COLUMN_HEADERS": {
+                "ID_NUMBER": "ID number",
+                "NAME": "Name",
+                "SURNAME": "Surname",
+                "CITY": "City",
+                "ADDRESS": "Address",
+                "CONTACT_DETAILS": "Contact Details",
+                "STATUS": "Status",
+                "NUMBER_OF_CHILDREN": "Number of children",
+                "CHILDREN": "Children",
+                "MARRIED_CHILDREN": "Married children",
+                "SPOUSE": "Spouse",
+                "SPOUSE_OCCUPATION": "Spouse occupation",
+                "BIRTH_DATE": "Birth Date",
+                "OTHER_SCHOOLS": "Other schools",
+                "SUPPORT": "Support",
+                "BANK_ACCOUNT": "Bank account",
+                "MARTIAL_STATUS":"Martial status",
+                "MONTHLY_INCOME": "Monthly income",
+                "ID_CARD": "ID card",
+                "TRAVEL_EXPENSES": "Travel expenses",
+                "FAX_NUMBER": "Fax number",
+                "PICTURE": "Picture",
+                "DELETE":"Delete"
+            },  
+            "COLUMN_WORDS_DEFS": {
+                "STREET":"Street",
+                "APARTMENT":"apartment",
+                "BANK":"Bank",
+                "BRANCH":"Branch",
+                "ACCOUNT":"ACCOUNT",
+                "ACTIVE":"Active",
+                "NOT_ACTIVE":"Not active"
+            }
+        }
+    },
+    "BRANCHES": {
+        "AG_GRID": {
+            "COLUMN_HEADERS": {               
+                "NAME": "Name",               
+                "CITY":"city",
+                "NEIGHBORHOOD":"neighborhood",
+                "ADRESS":"adress",
+                "STATUS":"status",
+                "CHARACTER":"Character",
+                "BASIC_SUPPORT":"basic support",
+                "HEAD":"head",
+                "STUDENTS":"Students",
+                "OPENING_DATE":"opening date",
+                "STUDENTS_NUMBER":"students",
+                "STUDY_SUBJECTS":"study subjects",                
+                "IMAGE":"image",
+                "TYPE":"type",
+                "EXAM_RULES":"exam rules",
+                "ATTENDANCE_RULES":"attendance rules",              
+                "CONTACT":"contact",
+                "LATE_HOUR":"late hour",
+                "START_STUDY_HOURS":"start study hours",
+                "END_STUDY_HOURS":"end study hours",
+                "BRANCH":"Branch"
+
+            },
+            "COLUMN_WORDS_DEFS": { 
+                "STREET":"Street",
+                "APARTMENT":"apartment",
+                "ACTIVE":"Active",
+                "NOT_ACTIVE":"Not active",
+                "DAY":"day",
+                "EVENING":"evening",
+                "REQUIRED":"required exam",
+                "NOT_REQUIRED":"not required exam",
+                "MAX_ABSENCES":"max absences",
+                "MAX_LATENESS":"max lateness",
+                "EXAMS_PER_PERIOD":"exam per period",
+                "EXAMS_PERIOD":"exam period"
+                
+            }
+        }
+    },
+    "EXAMS":{
+        "AG_GRID": {
+            "COLUMN_HEADERS": {   
+                "SUBMIT_EXAM_SCHROLARSHIP_ADDITION":"submit exam schrolarship addition",
+                "FAILING_SUBMIT_EXAM_SCHROLARSHIP_REDUCING":"failing submit exam schrolarship reducing",
+                "PASSED_EXAM_SCHOLARSHIP_ADDITION":"passed exam scholarship addition",
+                "NOT_PASSED_EXAM_SCHOLARSHIP_REDUCING":"not passed exam scholarship reducing",
+                "PASS_GRADE":"pass grade",
+                "SUBJECT":"subject",
+                "BRANCH":"Branch"
+            },
+            "COLUMN_WORDS_DEFS": {
+                
+            }
+        }
+    },
+    "LOANS": {
+        "AG_GRID": {
+            "COLUMN_HEADERS": {               
+                "STUDENT": "student",               
+                "BRANCH":"branch",
+                "CURRENT_STATUS":"current status",
+                "AMOUNT_REQUESTED":"amount requested",
+                "AMOUNT_REPAYMENT_MONTHLY":"amount repayment monthly",
+                "DATE_RETURNING_ENTIRE_AMOUNT":"date returning entire month",
+                "REASON_IS_APPROVED":"reason is approved",
+                "IS_DISAPPROVED_CLOSED_REQUEST":"is disapproved closed request",
+                "DETAILS":"details",
+                "DATE":"date",
+                "IS_APPROVED":"is approved",
+                "DIGITAL_SIGNATURE":"digital signature",
+                "IS_CANCELED":"is canceled",
+                "NUMBER_APPROVED_MONTHS":"number approved months",
+                "APPROVED_AMOUNT":"approved amount",
+                "IS_ACTIVE":"is active"
+            },
+            "COLUMN_WORDS_DEFS": {                 
+                "ACTIVE":"Active",
+                "NOT_ACTIVE":"Not active"               
+            }
+        }
+    },
+    "FinancialSupports":{
+        "AG_GRID": {
+            "COLUMN_HEADERS": {               
+                "DETAILS":"details"
+            },
+            "COLUMN_WORDS_DEFS": {                 
+                          
+            }
+        }
+    },
+    "PAYMENTS":{
+        "AG_GRID": {
+            "COLUMN_HEADERS": {               
+               "STUDENT":"student",
+               "YEAR":"year",
+               "MONTH":"month",
+               "PAYMENT_SUM":"payment sum",
+               "ATTENDANCE_SUM":"attendance sum",
+               "EXAMS_SUM":"exams sum",
+               "STATE_BUDGET_SUM":"state budget sum",
+               "HEALTH_SUPPORT_SUM":"health support sum",
+               "DENTAL_HEALTH_SUPPORT_SUM":"dental support sum",
+               "FINANCIAL_SUPPORT_SUM":"financial support sum",
+               "LOANS_GIVEN_SUM":"loans given sum",
+               "LOANS_RETURN_SUM":"loans return sum",
+               "SUMMARY":"summary"
+            },
+            "COLUMN_WORDS_DEFS": {                 
+                          
+            }
+        }
+    },
+    "AG_GRID":{
+        "LOADING_MESSAGE":"Loading..."
+    }
+}

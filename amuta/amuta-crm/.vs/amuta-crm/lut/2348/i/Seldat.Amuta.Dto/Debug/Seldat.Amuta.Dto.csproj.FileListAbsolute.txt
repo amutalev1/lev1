@@ -1,0 +1,12 @@
+C:\Users\user1\Desktop\גיבויים\05.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.csprojAssemblyReference.cache
+C:\Users\user1\Desktop\גיבויים\05.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\גיבויים\09.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\b\amuta-crm\Seldat.Amuta.Dto\bin\Debug\Seldat.Amuta.Dto.dll
+C:\Users\user1\Desktop\גיבויים\09.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.csprojAssemblyReference.cache
+C:\Users\user1\Desktop\גיבויים\09.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\גיבויים\09.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.csproj.CopyComplete
+C:\Users\user1\Desktop\גיבויים\09.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.dll
+C:\Users\user1\Desktop\גיבויים\10.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\b\amuta-crm\Seldat.Amuta.Dto\bin\Debug\Seldat.Amuta.Dto.dll
+C:\Users\user1\Desktop\גיבויים\10.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.csprojAssemblyReference.cache
+C:\Users\user1\Desktop\גיבויים\10.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\גיבויים\10.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.csproj.CopyComplete
+C:\Users\user1\Desktop\גיבויים\10.06.19\amuta\amuta-crm\.vs\amuta-crm\lut\0\i\Seldat.Amuta.Dto\Debug\Seldat.Amuta.Dto.dll

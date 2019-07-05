@@ -1,0 +1,31 @@
+<form #studentForm="ngForm" (ngSubmit)="AddStudent()" name="stForm" >
+  <div>
+  <label for="fname" >שם פרטי:  </label>    
+    <mat-form-field> 
+      <input matInput type="text" name="fname" [(ngModel)]="studChild.FirstName" required minlength="2" maxlength="50"/>
+    </mat-form-field>
+ 
+  
+  <label for="lname">שם משפחה:  </label>
+  <mat-form-field> 
+   <input matInput type="text" name="lname" [(ngModel)]="studChild.LastName" required minlength="2" maxlength="50"/>
+  </mat-form-field>
+ 
+  
+  <label for="gender"> מין:  </label>
+  <mat-form-field>
+    <input matInput type="text" name="gender" [(ngModel)]="studChild.Gender" required minlength="2" maxlength="50"/>
+  </mat-form-field>
+  
+  <label for="age"> גיל: </label>
+  <mat-form-field>  
+    <input matInput type="text" name="age" [(ngModel)]="studChild.Age" required minlength="2" maxlength="50"/>
+  </mat-form-field>
+
+  
+  <label for="status">סטטוס: </label>
+  <mat-form-field>  
+    <input matInput type="text" name="status" [(ngModel)]="studChild.Status" required minlength="9" maxlength="20" pattern="[0-9]*"/>
+  </mat-form-field>
+</div>
+  </form>

@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Amuta.Api", "Seldat.Amuta.Api\Seldat.Amuta.Api.csproj", "{A449958D-2508-4C69-8196-D4DB085A50D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Amuta.Bl", "Seldat.Amuta.Bl\Seldat.Amuta.Bl.csproj", "{D298E152-9C3C-4EF0-87B9-F8CF5B466347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Amuta.Dal", "Seldat.Amuta.Dal\Seldat.Amuta.Dal.csproj", "{46F9A4CD-88D6-4B1D-AB1F-20E6067E049B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Amuta.Dto", "Seldat.Amuta.Dto\Seldat.Amuta.Dto.csproj", "{6169FC48-854D-4DBE-9AD4-FED783AB07FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Amuta.Entities", "Seldat.Amuta.Entities\Seldat.Amuta.Entities.csproj", "{DB75A3ED-4829-4151-90E0-A2E3FEA08F8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{85B70E36-05DF-4D89-84C4-2D7180B8B0BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Amuta.Tests", "Seldat.Amuta.Tests\Seldat.Amuta.Tests.csproj", "{D5EAB2C3-B391-4900-8619-6516F4318908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.DBMapper", "..\toolsrepo\Seldat.DBMapper\Seldat.DBMapper.csproj", "{676587AB-E8AB-452B-A53B-1E17045C852F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Utils", "..\toolsrepo\Seldat.Utils\Seldat.Utils.csproj", "{B6F17DEE-C59D-400A-B6E1-8F2743C41363}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Connectivity", "..\toolsrepo\Seldat.Connectivity\Seldat.Connectivity.csproj", "{88BDC0F9-BE4E-4344-BB57-B9787D8F08CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.Connectivity.ClientFactory", "..\toolsrepo\Seldat.Connectivity.ClientFactory\Seldat.Connectivity.ClientFactory.csproj", "{E4ACC738-190B-4862-B84A-2E18DA614AF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.AspNet.Identity.Entities", "..\toolsrepo\Seldat.AspNet.Identity.Entities\Seldat.AspNet.Identity.Entities.csproj", "{0B51AFBE-7488-4C7A-8066-151670B2E390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seldat.AspNet.Identity", "..\toolsrepo\Seldat.AspNet.Identity\Seldat.AspNet.Identity.csproj", "{DC8269E3-1A13-427A-90D6-A41C7BC173BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A449958D-2508-4C69-8196-D4DB085A50D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A449958D-2508-4C69-8196-D4DB085A50D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A449958D-2508-4C69-8196-D4DB085A50D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A449958D-2508-4C69-8196-D4DB085A50D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D298E152-9C3C-4EF0-87B9-F8CF5B466347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D298E152-9C3C-4EF0-87B9-F8CF5B466347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D298E152-9C3C-4EF0-87B9-F8CF5B466347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D298E152-9C3C-4EF0-87B9-F8CF5B466347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F9A4CD-88D6-4B1D-AB1F-20E6067E049B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F9A4CD-88D6-4B1D-AB1F-20E6067E049B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F9A4CD-88D6-4B1D-AB1F-20E6067E049B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F9A4CD-88D6-4B1D-AB1F-20E6067E049B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6169FC48-854D-4DBE-9AD4-FED783AB07FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6169FC48-854D-4DBE-9AD4-FED783AB07FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6169FC48-854D-4DBE-9AD4-FED783AB07FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6169FC48-854D-4DBE-9AD4-FED783AB07FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB75A3ED-4829-4151-90E0-A2E3FEA08F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB75A3ED-4829-4151-90E0-A2E3FEA08F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB75A3ED-4829-4151-90E0-A2E3FEA08F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB75A3ED-4829-4151-90E0-A2E3FEA08F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EAB2C3-B391-4900-8619-6516F4318908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EAB2C3-B391-4900-8619-6516F4318908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EAB2C3-B391-4900-8619-6516F4318908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EAB2C3-B391-4900-8619-6516F4318908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{676587AB-E8AB-452B-A53B-1E17045C852F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676587AB-E8AB-452B-A53B-1E17045C852F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676587AB-E8AB-452B-A53B-1E17045C852F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676587AB-E8AB-452B-A53B-1E17045C852F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F17DEE-C59D-400A-B6E1-8F2743C41363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F17DEE-C59D-400A-B6E1-8F2743C41363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F17DEE-C59D-400A-B6E1-8F2743C41363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F17DEE-C59D-400A-B6E1-8F2743C41363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BDC0F9-BE4E-4344-BB57-B9787D8F08CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BDC0F9-BE4E-4344-BB57-B9787D8F08CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BDC0F9-BE4E-4344-BB57-B9787D8F08CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BDC0F9-BE4E-4344-BB57-B9787D8F08CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4ACC738-190B-4862-B84A-2E18DA614AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4ACC738-190B-4862-B84A-2E18DA614AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4ACC738-190B-4862-B84A-2E18DA614AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4ACC738-190B-4862-B84A-2E18DA614AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B51AFBE-7488-4C7A-8066-151670B2E390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B51AFBE-7488-4C7A-8066-151670B2E390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B51AFBE-7488-4C7A-8066-151670B2E390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B51AFBE-7488-4C7A-8066-151670B2E390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8269E3-1A13-427A-90D6-A41C7BC173BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8269E3-1A13-427A-90D6-A41C7BC173BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8269E3-1A13-427A-90D6-A41C7BC173BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8269E3-1A13-427A-90D6-A41C7BC173BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{676587AB-E8AB-452B-A53B-1E17045C852F} = {85B70E36-05DF-4D89-84C4-2D7180B8B0BF}
+		{B6F17DEE-C59D-400A-B6E1-8F2743C41363} = {85B70E36-05DF-4D89-84C4-2D7180B8B0BF}
+		{88BDC0F9-BE4E-4344-BB57-B9787D8F08CD} = {85B70E36-05DF-4D89-84C4-2D7180B8B0BF}
+		{E4ACC738-190B-4862-B84A-2E18DA614AF3} = {85B70E36-05DF-4D89-84C4-2D7180B8B0BF}
+		{0B51AFBE-7488-4C7A-8066-151670B2E390} = {85B70E36-05DF-4D89-84C4-2D7180B8B0BF}
+		{DC8269E3-1A13-427A-90D6-A41C7BC173BA} = {85B70E36-05DF-4D89-84C4-2D7180B8B0BF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {611C571E-3913-41A9-B8D0-47659D2ECEF6}
+	EndGlobalSection
+EndGlobal

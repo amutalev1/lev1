@@ -1,0 +1,42 @@
+<mat-toolbar id="sss">
+  
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item routerLink="/branches/allBranches">כוללים</a>
+    <a mat-menu-item routerLink="/students/allStudents">תלמידים</a>
+    <a mat-menu-item routerLink="/">נוכחות</a>
+    <a mat-menu-item routerLink="/Exams">מבחנים</a>
+    <a mat-menu-item routerLink="/requests">בקשות</a>
+    <a mat-menu-item routerLink="/">מלגות</a>
+    <a mat-menu-item routerLink="/financialSupports">תמיכה כלכלית</a>
+    <a mat-menu-item routerLink="/loans">הלוואות</a>
+    <a mat-menu-item routerLink="payments/allPayments">תשלומים</a>
+    <a mat-menu-item routerLink="/">שמחות</a>
+    <a mat-menu-item routerLink="/">ערבים</a>
+    <a mat-menu-item routerLink="/students/branchStudents/2">תלמידים בכולל</a>
+    <a mat-menu-item routerLink="/students/studentPayment">תשלום לתלמיד</a>
+  </mat-menu>
+
+  <span class="example-fill-remaining-space"></span>
+  <div class="icons">
+    <button title="{{'HEADER.LINKS_TOOLTIP.PRINT'|translate}}">
+      <mat-icon>print</mat-icon>
+    </button>
+    <button title="{{'HEADER.LINKS_TOOLTIP.SEARCH'|translate}}">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button (click)="delete()" title="{{'HEADER.LINKS_TOOLTIP.DELETE'|translate}}">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button (click)="add()" title="{{'HEADER.LINKS_TOOLTIP.ADD'|translate}}">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button (click)="showAllColumns()" title="{{'HEADER.LINKS_TOOLTIP.SHOW_ALL_COLUMNS'|translate}}">
+      <mat-icon>remove_red_eye</mat-icon>
+    </button>
+    <!-- <button mat-icon-button><mat-icon>file_excel</mat-icon></button> -->
+  </div>
+
+</mat-toolbar>
